@@ -1,2 +1,2 @@
-# LeetCode-Practice: Python
+# LeetCode-Practice
 Solving Easy and Medium LeetCode Problems
