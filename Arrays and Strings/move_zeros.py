@@ -26,6 +26,6 @@ def moveZeroes(nums):
 
     print("Final array of nums:", nums)
 
-
-nums = [0, 1, 3, 0, 12]
+nums = [int(item) for item in input('Enter elems: ').split()]
+# nums = [0, 1, 3, 0, 12]
 moveZeroes(nums)
