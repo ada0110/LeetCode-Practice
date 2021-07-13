@@ -17,7 +17,7 @@ def func(arr, list_tuples):
         print(arr)
         print('\n')
 
-    print("max elem:", max(arr))
+    print("maximum elem:", max(arr))
     
 
 func([10,10,10,10,10], [(1,3), (0,2)])
