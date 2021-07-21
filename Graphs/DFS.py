@@ -6,9 +6,10 @@ class Graph:
 
     def insertEdge(self, v1, v2):
         self.graph[v1].append(v2)
-        print(self.graph)
+        
 
-    def DFS(self, startNode, debug = True):
+    def DFS(self, startNode, debug = False):
+        print(self.graph)
         # using  list as stack
         st = []
         visited = set()
@@ -27,6 +28,7 @@ class Graph:
 
             if(cur_elem not in visited):
                 if debug: print("curr_elem:", cur_elem, end ="\n")
+                print(cur_elem, end = " ")
                 visited.add(cur_elem)
                 if debug: print("visited:", visited)
                 if debug: print("---------------------------------")
