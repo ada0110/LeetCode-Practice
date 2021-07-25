@@ -8,7 +8,7 @@ for i in range(t):
         s = input()
         l.append(list(s))
     print("list of str:", l)
-    
+
     stars = []
     for elem in l:
         print("elem:", elem)
@@ -20,7 +20,7 @@ for i in range(t):
             # for val in stars:
             #     elem[val] = '*'
 
-
+    print(l)
 
 
 # for i in range(t):
