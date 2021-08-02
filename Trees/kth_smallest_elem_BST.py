@@ -14,13 +14,14 @@ class Solution:
     def __init__(self) -> None:
         self.arr = []
 
+    # inorder traversal 
     def inorder(self, node):
         if node is not None:
             self.inorder(node.left)
             self.arr.append(node.val)
             self.inorder(node.right)
         
-
+    # inserting nodes in BST
     def insert(self, root, node):
         if root is None:
             node = root
