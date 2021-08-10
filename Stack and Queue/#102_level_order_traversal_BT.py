@@ -1,7 +1,8 @@
 
 # time and space complexity: O(n)
 
-from typing import List
+from typing import Deque, List
+from collections import deque
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -16,15 +17,18 @@ class Solution:
         if root is None:
             return ans
 
-        q = [] 
-        q.append(root)
-        print(q)
-        
+        # q = [] 
+        # q.append(root)
+        # print(q)
+        # OR use a deque
+        q = deque([root])
         while (len(q)):
             n = len(q)
             temp = []
             for i in range(n):
-                f = q.pop()
+                # f = q.pop(0) 
+                # OR
+                f = q.popleft()
                 temp.append(f.val)
                 print(temp)
 
@@ -42,10 +46,8 @@ class Solution:
         
         return ans 
                
+          
             
-             
-
-
 # Input: root = [3,9,20,null,null,15,7]
 # Output: [[3],[9,20],[15,7]]
 
