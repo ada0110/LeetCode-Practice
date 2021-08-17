@@ -1,2 +1,2 @@
 # LeetCode-Practice
-Solving Easy and Medium LeetCode Problems
+Solving LeetCode Problems
