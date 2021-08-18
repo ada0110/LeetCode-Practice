@@ -33,18 +33,18 @@ class Solution:
         else:
             return left 
 
-#           3
-#       5       1
-#     6   2   0   8
-#    n n 7  4  
+#                 3
+#            5         1
+#        6     2    0    8
+#      n  n  7   4  
 
 
 tree = TreeNode(3)
 tree.left = TreeNode(5)
 tree.left.left = TreeNode(6)
 tree.left.right = TreeNode(2)
-tree.left.left.left = TreeNode(None)
-tree.left.left.right = TreeNode(None)
+# tree.left.left.left = TreeNode(None)
+# tree.left.left.right = TreeNode(None)
 tree.left.right.left = TreeNode(7)
 tree.left.right.right = TreeNode(4)
 tree.right = TreeNode(1)
