@@ -24,13 +24,13 @@ class Graph:
 
 
 
-g = Graph(5)
+g = Graph(4)
 
 g.addEdges(1,2)
 g.addEdges(1,4)
 g.addEdges(2,3)
-g.addEdges(3,1)
-g.addEdges(3,5)
+g.addEdges(3,4)
+
 
 g.printGraph()
 
