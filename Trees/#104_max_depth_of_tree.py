@@ -5,6 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
+#  time complexity: O(n)
+# space complexity: O(h) where h is the height of the tree --> cz of recursive nature
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if root is None:
