@@ -4,7 +4,6 @@ from collections import defaultdict
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
 
-        '''
         # sol1 
         d = {}
         for num in nums:
@@ -25,7 +24,6 @@ class Solution:
                 return True
             d[num] = 1
         return False
-        '''
 
         # sol3
         d = defaultdict(int)
@@ -35,10 +33,14 @@ class Solution:
             d[num] = 1
         return False
 
+        # sol4
+        if len(set(nums)) != len(nums):
+            return True
+        return False
 
 
 
 s = Solution()
 ans = s.containsDuplicate([1,2,3,1])
-print("printing ans: ")
+#print("printing ans: ")
 print(ans)
