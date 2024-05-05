@@ -69,8 +69,7 @@ class Solution:
                 continue    
         return True
         
-     
-        
+       
     def is_alphanumeric(self, s):
         for c in s:
             if (ord('a') <= ord(c) <= ord('z') or 
@@ -80,7 +79,6 @@ class Solution:
                  
             
         
-            
 s = Solution()
 ans = s.isPalindrome(s = "A man, a plan, a canal: Panama")
 print(ans)
