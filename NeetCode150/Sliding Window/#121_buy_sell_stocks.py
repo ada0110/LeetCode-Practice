@@ -35,20 +35,10 @@ class Solution:
                 print("curr_profit:", curr_profit)
                 max_profit = max(curr_profit, max_profit) 
                 # r += 1
-                
             else:
                 l = r
             r += 1
                 
-            # if curr_profit < 0:
-            #     l += 1
-            #     r += 1
-            #     print(f"l:{l}\tr:{r}")
-            # if curr_profit > max_profit:
-            #     max_profit = curr_profit
-            #     print("max_profit:", max_profit)
-            #     r += 1
-        
         return max_profit
     
     def maxProfit_v2(self, prices: List[int]) -> int:
