@@ -54,7 +54,6 @@ class Solution:
         # make use of l and r pointers and compare while (l<r)
         #  skip the non-apphanumeric characters using ascii values
         
-        
         s = [c.lower() for c in s if self.is_alphanumeric(c)]
         l= 0
         r = len(s) - 1
@@ -70,6 +69,7 @@ class Solution:
         return True
         
        
+       
     def is_alphanumeric(self, s):
         for c in s:
             if (ord('a') <= ord(c) <= ord('z') or 
@@ -77,7 +77,7 @@ class Solution:
                 ord('0') <= ord(c) <= ord('9')):
                 return True
                  
-            
+  
         
 s = Solution()
 ans = s.isPalindrome(s = "A man, a plan, a canal: Panama")
